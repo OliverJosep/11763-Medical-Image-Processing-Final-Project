@@ -1,0 +1,4 @@
+pydicom>=3.0.1
+highdicom>=0.25.1
+numpy>=2.2.5
+matplotlib>=3.10.1
