@@ -15,6 +15,16 @@ def load_dicom(path_folder: str):
     slices.sort(key=lambda x: int(x.InstanceNumber))
     return slices
 
+def load_one_file(path_file: str):
+    """ Load a single DICOM file. """
+    if not os.path.isfile(path_file):
+        raise FileNotFoundError(f"File not found: {path_file}")
+    if not path_file.endswith('.dcm'):
+        raise ValueError(f"File is not a DICOM file: {path_file}")
+    dcm = pydicom.dcmread(path_file)
+    return dcm
+
+
 def create_3d_array_from_dicom(slices: list[pydicom.Dataset]) -> np.ndarray:
     """ Create a 3D numpy array from DICOM slices. """
     # Asegurar que totes les imatges tenen la mateixa mida
