@@ -10,13 +10,10 @@ data/1685/
 ├── 40_RTRD_Ax2.50mm/                        # Secondary DICOM volume (optional)
 ├── 10_AP_Ax2.50mm_ManualROI_Liver/         # Liver segmentation (RTSTRUCT)
 ├── 10_AP_Ax2.50mm_ManualROI_Tumor/         # Tumour segmentation (RTSTRUCT)
-
 notebook/
 ├── Objective1.ipynb                         # Main notebook with loading, segmentation, visualisation
-
 scripts/
 ├── Objective1.ipynb                         # (Duplicate) Optional script format
-
 outputs/
 ├── projection/                              # MIP + GIF with ground truth masks
 │   ├── Animation.gif
@@ -40,4 +37,3 @@ All Python dependencies are listed in the `requirements.txt` file. To install th
 ```bash
 pip install -r requirements.txt
 ```
-pip install numpy pydicom matplotlib scikit-image imageio scipy
