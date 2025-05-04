@@ -6,20 +6,20 @@ This project focuses on DICOM data loading, CT volume visualisation, liver tumou
 
 ```ssh
 data/1685/
-├── 10_AP_Ax2.50mm/                          # DICOM CT volume
-├── 40_RTRD_Ax2.50mm/                        # Secondary DICOM volume (optional)
-├── 10_AP_Ax2.50mm_ManualROI_Liver/         # Liver segmentation (RTSTRUCT)
-├── 10_AP_Ax2.50mm_ManualROI_Tumor/         # Tumour segmentation (RTSTRUCT)
+├── 10_AP_Ax2.50mm/
+├── 40_RTRD_Ax2.50mm/
+├── 10_AP_Ax2.50mm_ManualROI_Liver/
+├── 10_AP_Ax2.50mm_ManualROI_Tumor/
 notebook/
-├── Objective1.ipynb                         # Main notebook with loading, segmentation, visualisation
+├── Objective1.ipynb                        
 scripts/
-├── Objective1.ipynb                         # (Duplicate) Optional script format
+├── Objective2.ipynb
 outputs/
-├── projection/                              # MIP + GIF with ground truth masks
+├── projection/
 │   ├── Animation.gif
 │   ├── Projection_1.png
 │   └── …
-├── projection_prediction/                   # MIP + GIF with predicted masks
+├── projection_prediction/
 │   ├── Animation.gif
 │   ├── Projection_1.png
 │   └── …
