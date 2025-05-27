@@ -27,7 +27,6 @@ def load_one_file(path_file: str):
 
 def create_3d_array_from_dicom(slices: list[pydicom.Dataset]) -> np.ndarray:
     """ Create a 3D numpy array from DICOM slices. """
-    # Asegurar que totes les imatges tenen la mateixa mida
     img_shape = slices[0].pixel_array.shape
     img_3d = np.zeros((len(slices), *img_shape), dtype=np.int16)
 
