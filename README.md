@@ -11,9 +11,10 @@ data/1685/
 ├── 10_AP_Ax2.50mm_ManualROI_Liver/
 ├── 10_AP_Ax2.50mm_ManualROI_Tumor/
 notebook/
-├── Objective1.ipynb                        
+├── Objective1.ipynb
+├── Objective2.ipynb                         
 scripts/
-├── Objective2.ipynb
+├── dicom.py
 outputs/
 ├── projection/
 │   ├── Animation.gif
