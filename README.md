@@ -6,10 +6,10 @@ This project focuses on DICOM data loading, CT volume visualisation, liver tumou
 
 ```ssh
 data/1685/
-├── 10_AP_Ax2.50mm/
-├── 40_RTRD_Ax2.50mm/
-├── 10_AP_Ax2.50mm_ManualROI_Liver/
-├── 10_AP_Ax2.50mm_ManualROI_Tumor/
+├── {dicom1}x2.50mm/
+├── {dicom2}_Ax2.50mm/
+├── {dicom1}x2.50mm_ManualROI_Liver/
+├── {dicom1}x2.50mm_ManualROI_Tumor/
 notebook/
 ├── Objective1.ipynb
 ├── Objective2.ipynb                         
